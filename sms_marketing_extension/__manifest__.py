@@ -22,5 +22,4 @@
     'demo': [
     ],
     'auto_install': True,
-    "external_dependencies": {"python": ['africastalking']},
 }
