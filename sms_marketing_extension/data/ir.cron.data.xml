@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+    <record id="ir_cron_sms_marketing_activity" model="ir.cron">
+        <field name="name">Marketing Automation: execute mailing trace </field>
+        <field name="model_id" ref="model_mailing_trace"/>
+        <field name="state">code</field>
+        <field name="code">model.sendsmsafterfailure()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record>
+    <record id="ir_cron_sms_mailing_activity" model="ir.cron">
+        <field name="name">Marketing Automation: execute sms sending</field>
+        <field name="model_id" ref="model_mailing_trace"/>
+        <field name="state">code</field>
+        <field name="code">model.sendsmsafterfailurestandalone()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record>
+     <!-- <record id="ir_cron_check_zmall_users_time" model="ir.cron">
+        <field name="name">Select Users With Out Order</field>
+        <field name="model_id" ref="model_res_partner"/>
+        <field name="state">code</field>
+        <field name="code">model.finduserswithoutorder()</field>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+    </record> -->
+
+</odoo>
