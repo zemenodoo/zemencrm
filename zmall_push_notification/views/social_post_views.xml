@@ -27,8 +27,8 @@
                         attrs="{'invisible': [('display_push_notification_attributes', '=', False)]}"/>
                     <field name="use_visitor_timezone"
                         attrs="{'invisible': [('display_push_notification_attributes', '=', False)]}"/>-->
-                    <field nolabel="1" colspan="2" name="user_domain" widget="domain" options="{'model': 'res.partner'}"
-                        attrs="{'invisible': [('display_thenewpush_notification_attributes', '=', False)]}"/>
+<!--                     <field nolabel="1" colspan="2" name="user_domain" widget="domain" options="{'model': 'res.partner'}"
+                        attrs="{'invisible': [('display_thenewpush_notification_attributes', '=', False)]}"/> -->
                 </xpath>
                 <xpath expr="//group[@name='social_post_global']" position="inside">
                     <field name="display_thenewpush_notifications_preview" invisible="1" />
