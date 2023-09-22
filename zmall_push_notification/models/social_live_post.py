@@ -110,7 +110,7 @@ class SocialLivePostthenewpushNotifications(models.Model):
                 # live_post.write({'state': 'posted'})
         _logger.info("noooooooooooooooo")
     
-    def _post_thenewpush_notifications(self, data):
+    def _post_thenewpush_notifications_2(self, data):
         _logger.info("wow")
         posted_list = self.env['social.post'].search([("state" , "=" , "posted")])
         for live_post in posted_list:
